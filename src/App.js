@@ -1,11 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PageTemplate from './components/shared/PageTemplate'
+import CmpArticle from './article/CmpArticle'
 
 function App() {
   return (
-    <main className="App">
-    </main>
+    <PageTemplate>
+        <main>
+          <CmpArticle />
+        </main>
+    </PageTemplate>
   );
 }
 

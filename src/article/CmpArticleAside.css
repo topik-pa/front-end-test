@@ -1,0 +1,13 @@
+
+aside {
+    width: 35%;
+    position: relative;
+    top: -100px;
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        width: initial;
+        top: 0;
+    }
+}

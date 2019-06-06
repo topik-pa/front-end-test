@@ -1,0 +1,24 @@
+nav {
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    top: -60px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    list-style: none;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        text-align: right;
+    }
+    nav li {
+        padding: 0 1rem;
+    }
+}

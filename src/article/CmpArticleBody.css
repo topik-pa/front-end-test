@@ -1,0 +1,43 @@
+.article {
+    width: 65%;
+    padding: 0 2rem 0 0;
+}
+
+.article__subtitle {
+    font-weight: bold;
+}
+
+.article__title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 1rem 0;
+}
+
+.article__text {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.article__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.article__author {
+    display: flex;
+    align-items: center;
+}
+
+.article__socials i {
+    margin: 0 .5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .article {
+        width: initial;
+        top: 0;
+    }
+}
