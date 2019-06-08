@@ -4,11 +4,11 @@ import './CmpArticle.css';
 import CmpArticleBody from './CmpArticleBody'
 import CmpArticleAside from './CmpArticleAside'
 
-const CmpArticle = () => {
+const CmpArticle = ({ article, images, cards }) => {
     return (
       <article>
-        <CmpArticleBody />
-        <CmpArticleAside />
+        <CmpArticleBody article={article} images={images} />
+        <CmpArticleAside cards={cards}/>
       </article>      
     )    
 }

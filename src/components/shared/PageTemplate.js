@@ -1,11 +1,11 @@
 import React from 'react';
 import CmpHeader from './header/CmpHeader'
 
-const PageTemplate = ({ children }) => {
-    //TODO: remove element main-wrapper?
+const PageTemplate = ({ children, data }) => {
+    //TODO: remove element main-wrapper? 
     return (
         <div className="main-wrapper"> 
-            <CmpHeader />
+            <CmpHeader logo={data.logo} pages={data.pages}/>
             {children}
         </div>
     )    

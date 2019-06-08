@@ -1,15 +1,14 @@
 import React from 'react';
 // import './CmpArticleGallery.css';
 
-const CmpArticleGallery = () => {
+const CmpArticleGallery = ({ images }) => {
     return (
       <div className="article__gallery">
-        <img alt="" src="https://placekitten.com/g/180/180"/>
-        <img alt="" src="https://placekitten.com/g/180/180"/>
-        <img alt="" src="https://placekitten.com/g/180/180"/>
-        <img alt="" src="https://placekitten.com/g/180/180"/>
-        <img alt="" src="https://placekitten.com/g/180/180"/>
-        <img alt="" src="https://placekitten.com/g/180/180"/>
+        {
+            images.map((image, i) =>
+                <img key={i} alt="" src={image.src} />
+            )
+        }
       </div>
     )    
 }

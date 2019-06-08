@@ -1,10 +1,10 @@
 import React from 'react';
 import './CmpLogo.css';
 
-const CmpLogo = () => {
+const CmpLogo = ({logo}) => {
     return (
         <div className="logo">
-            Asdrubale
+            {logo}
         </div>
     )    
 }

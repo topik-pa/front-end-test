@@ -3,30 +3,28 @@ import './CmpArticleBody.css';
 
 import CmpArticleGallery from './CmpArticleGallery'
 
-const CmpArticleBody = () => {
+const CmpArticleBody = ({ article, images }) => {
     return (
       <section className="article">
-        <div className="article__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <div className="article__title">Vestibulum sit amet tellus ullamcorper, tincidunt turpis sit amet, lacinia nisl. Sed eu neque tincidunt, pretium sem eget, hendrerit velit.</div>
-        <div className="article__text">Vivamus volutpat ante elit, nec egestas mi pretium at. Nam tempor pellentesque orci, sed malesuada nibh tempor id. Vivamus cursus, velit pretium tempus ullamcorper, neque velit malesuada nulla, ut consequat velit mauris in nunc.</div>
+        <div className="article__subtitle">{article.subtitle}</div>
+        <div className="article__title">{article.title}</div>
+        <div className="article__text">{article.text}</div>
         <div className="article__footer">
           <div className="article__author">
-            <img alt="" src="https://placekitten.com/g/40/40"/>
-            <div>Lorem ipsum</div>
+            <img alt="" src={article.avatar}/>
+            <div>{article.author}</div>
           </div>
           <div className="article__socials">
-            <i className="material-icons">
-              android
-            </i>
-            <i className="material-icons">
-              android
-            </i>
-            <i className="material-icons">
-              android
-            </i>
+          {
+              article.socials.map((social, i) =>
+                  <i key={i} className="material-icons">
+                    {social.icon}
+                  </i>
+              )
+          }
           </div>
         </div>
-      <CmpArticleGallery />
+      <CmpArticleGallery images={images} />
     </section> 
     )    
 }

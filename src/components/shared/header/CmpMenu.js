@@ -1,13 +1,17 @@
 import React from 'react';
 import './CmpMenu.css';
 
-const CmpMenu = () => {
+const CmpMenu = ({pages}) => {
     return (
         <nav>
             <ul>
-                <li>Lorem</li>
-                <li>Ipsum</li>
-                <li>Dolor</li>
+                {
+                    pages.map((page, i) =>
+                        <li key={i}>
+                            <a href={page.url}>{page.name}</a>
+                        </li>
+                    )
+                }
             </ul>
         </nav>
     )    

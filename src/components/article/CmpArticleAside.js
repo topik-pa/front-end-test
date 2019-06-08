@@ -4,10 +4,14 @@ import './CmpArticleAside.css';
 import CmpArticleCard from './CmpArticleCard'
 
 
-const CmpArticleAside = () => {
+const CmpArticleAside = ({ cards }) => {
     return (
       <aside>
-        <CmpArticleCard />
+        {
+            cards.map((box, i) =>
+              <CmpArticleCard key={i} index={i} data={box}/>
+            )
+        }        
       </aside>
     )    
 }

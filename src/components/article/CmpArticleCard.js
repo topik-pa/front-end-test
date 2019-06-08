@@ -4,20 +4,20 @@ import './CmpArticleCard.css';
 import CmpArticleCardButton from './CmpArticleCardButton'
 
 
-const CmpArticleCard = () => {
+const CmpArticleCard = ({data, index}) => {
     return (
       <div className="card">
-        <div className="card__number">01</div>
+        <div className="card__number">{index}</div>
           <i className="card__icon material-icons">
-            android
+            {data.icon} 
           </i>
         <div className="card__subtitle">
-          Curabitur in mauris sed nunc convallis volutpat eu id libero. 
+          {data.subtitle} 
         </div>
         <div className="card__title">
-          Nunc accumsan viverra lorem sit amet aliquam. Sed semper porta nulla, ut dapibus turpis feugiat eget. Phasellus eget justo sem.
+          {data.title}
         </div>
-        <CmpArticleCardButton/>
+        <CmpArticleCardButton cta={data.cta}/>
       </div>
     )    
 }
