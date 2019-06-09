@@ -38,36 +38,66 @@ const DATA =
     },
     "images": [
         {
-            "src": "https://placekitten.com/g/100/100",
+            "src": "https://placekitten.com/g/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/100/100",
+            "src": "https://placekitten.com/g/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/100/100",
+            "src": "https://placekitten.com/g/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/100/100",
-            "alt": "Alt descriprion for this image",
-        },
-        {
-            "src": "https://placekitten.com/g/100/100",
-            "alt": "Alt descriprion for this image",
-        },
-        {
-            "src": "https://placekitten.com/g/100/100",
+            "src": "https://placekitten.com/g/200/200",
             "alt": "Alt descriprion for this image",
         }
+        ,
+        {
+            "src": "https://placekitten.com/g/200/200",
+            "alt": "Alt descriprion for this image",
+        },
+        {
+            "src": "https://placekitten.com/g/200/200",
+            "alt": "Alt descriprion for this image",
+        }
+        
     ],
     "cards": [
         {
             "icon": "android",
             "subtitle": "Sapeva pure ca oggi je e te steverna inda 'sta machina",
             "title": "Quann' tu me purtast' a spara' chillu cristian' p'a prima vota.",
-            "cta": "Clicca qui"
+            "cta": "Clicca qui",
+            "images": [
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              },
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              },
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              },
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              }
+              ,
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              },
+              {
+                  "src": "https://placekitten.com/g/250/250",
+                  "alt": "Alt descriprion for this image",
+              }
+              
+          ],
         },
         {
             "title": "Quann' Salvatore Conte è turnat', quann' Danielino è muort' , iss, 'o sapeva.",

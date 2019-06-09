@@ -3,4 +3,5 @@ main {
   background-repeat: no-repeat;
   min-height: 640px;
   background-position: top center;
+  position: relative;
 }

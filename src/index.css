@@ -1,9 +1,19 @@
-body {
-  margin: 0;
+html {
+  font-size: 12px; 
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #111111;
+}
+
+p {
+  letter-spacing: .02em;
+  text-shadow: 0 0 1px transparent;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
 }
 
 #root {

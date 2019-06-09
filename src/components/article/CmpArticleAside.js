@@ -1,7 +1,7 @@
 import React from 'react';
 import './CmpArticleAside.css';
 
-import CmpArticleCard from './CmpArticleCard'
+import { CmpArticleCard } from './CmpArticleCard'
 
 
 const CmpArticleAside = ({ cards }) => {
@@ -9,7 +9,7 @@ const CmpArticleAside = ({ cards }) => {
       <aside>
         {
             cards.map((box, i) =>
-              <CmpArticleCard key={i} index={i} data={box}/>
+              <CmpArticleCard data={box} index={i} />
             )
         }        
       </aside>

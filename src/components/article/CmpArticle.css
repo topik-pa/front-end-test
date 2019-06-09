@@ -4,9 +4,35 @@ article {
     position: relative;
     top: 460px;
     border-radius: 10px;
-    padding: 2rem;
-    display: flex;
+    padding: 2rem 6rem;
+    z-index: 99;
+    /*display: flex;
+    justify-content: space-evenly;*/
 }
+
+.shadow {
+    /*background: white;
+    margin: 0 5rem;
+    position: relative;
+    top: -371px;
+    padding: 2rem 6rem;
+    height: 271px;*/
+
+    background: white;
+    margin: 0 5rem;
+    position: absolute;
+    top: 375px;
+    border-radius: 10px;
+    padding: 2rem 6rem;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transition: margin 1s ease-out;
+}
+.shadow.expanded {
+    margin: 0;
+}
+
 
 
 @media screen and (max-width: 768px) {

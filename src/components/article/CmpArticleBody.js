@@ -1,14 +1,14 @@
 import React from 'react';
 import './CmpArticleBody.css';
 
-import CmpArticleGallery from './CmpArticleGallery'
+import { CmpArticleGallery } from './CmpArticleGallery'
 
 const CmpArticleBody = ({ article, images }) => {
     return (
       <section className="article">
-        <div className="article__subtitle">{article.subtitle}</div>
-        <div className="article__title">{article.title}</div>
-        <div className="article__text">{article.text}</div>
+        <h2>{article.subtitle}</h2>
+        <h1>{article.title}</h1>
+        <p>{article.text}</p>
         <div className="article__footer">
           <div className="article__author">
             <img alt="" src={article.avatar}/>
