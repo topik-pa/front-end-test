@@ -1,7 +1,7 @@
 import React from 'react';
 import './CmpArticleBody.css';
 
-import { CmpArticleGallery } from './CmpArticleGallery'
+import { CmpArticleGallery } from './CmpArticleGallery';
 
 const CmpArticleBody = ({ article, images }) => {
     return (

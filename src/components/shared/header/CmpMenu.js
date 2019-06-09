@@ -1,5 +1,6 @@
 import React from 'react';
 import './CmpMenu.css';
+import './CmpMenuToggleAnimation.css';
 
 const CmpMenu = ({pages}) => {
     return (

@@ -38,28 +38,28 @@ const DATA =
     },
     "images": [
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/300/300",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/400/400",
             "alt": "Alt descriprion for this image",
         }
         ,
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/200/200",
             "alt": "Alt descriprion for this image",
         },
         {
-            "src": "https://placekitten.com/g/200/200",
+            "src": "https://placekitten.com/400/400",
             "alt": "Alt descriprion for this image",
         }
         

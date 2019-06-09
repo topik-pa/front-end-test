@@ -21,7 +21,7 @@ article {
     background: white;
     margin: 0 5rem;
     position: absolute;
-    top: 375px;
+    top: 460px;
     border-radius: 10px;
     padding: 2rem 6rem;
     left: 0;
@@ -34,11 +34,26 @@ article {
 }
 
 
+@media screen and (max-width: 1024px) {
+    article {
+        margin: 0 2rem;
+        padding: 2rem 2rem;        
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     article {
         margin: 0 2rem;
         display: block;
+        top: 460px;
+        padding: 2rem 2rem;
+    }
+
+    .shadow {
+        /*display: none;*/
+        margin: 0 2rem;
     }
 }
 

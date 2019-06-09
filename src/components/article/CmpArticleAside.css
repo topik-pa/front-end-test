@@ -9,9 +9,18 @@ aside {
     z-index: 99;
 }
 
+
+@media screen and (max-width: 1024px) {
+    aside {
+        padding-right: 5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     aside {
+        position: relative;
         width: initial;
-        top: 0;
+        top: 440px!important;
+        padding-right: 0;
     }
 }

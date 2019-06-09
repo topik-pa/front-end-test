@@ -4,7 +4,7 @@ import './CmpArticle.css';
 import CmpArticleBody from './CmpArticleBody'
 
 
-const CmpArticle = ({ article, images, cards }) => {
+const CmpArticle = ({ article, images }) => {
     return (
       <div className="article-wrapper">
         <article>

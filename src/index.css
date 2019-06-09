@@ -7,7 +7,7 @@ html {
 }
 
 p {
-  letter-spacing: .02em;
+  letter-spacing: .03rem;
   text-shadow: 0 0 1px transparent;
   text-rendering: optimizeLegibility;
 }

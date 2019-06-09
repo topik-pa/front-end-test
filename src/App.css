@@ -1,7 +1,8 @@
 main {
-  background-image: url('./cover.png');
+  background-image: url('https://s3-eu-west-1.amazonaws.com/production-hairdressr/fe-dummy/cover.png');
   background-repeat: no-repeat;
   min-height: 640px;
   background-position: top center;
   position: relative;
+  margin-top: 5rem
 }

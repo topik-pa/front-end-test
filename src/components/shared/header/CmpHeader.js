@@ -7,10 +7,8 @@ const CmpHeader = ({logo, pages}) => {
     
     return (
         <header className="fixed">
-            <div>
-                <CmpLogo logo={logo}/>            
-                <CmpMenu pages={pages}/>
-            </div>            
+            <CmpLogo logo={logo}/>            
+            <CmpMenu pages={pages}/>
         </header>
     )    
 }

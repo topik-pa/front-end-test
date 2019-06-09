@@ -50,9 +50,17 @@ p {
 }
 
 
+/*@media screen and (max-width: 1024px) {
+    .article {
+        width: 55%;
+    }
+}*/
+
+
 @media screen and (max-width: 768px) {
     .article {
         width: initial;
         top: 0;
     }
 }
+

@@ -5,8 +5,6 @@ import './CmpArticleCard.css';
 import CmpArticleCardButton from './CmpArticleCardButton'
 
 
-
-
 export class CmpArticleCard extends Component {
 
   state = {
@@ -40,7 +38,6 @@ export class CmpArticleCard extends Component {
           <div>
             <div className="top">{data.title}</div>
             <div className="bottom">
-
             {
               data.images 
               ?
@@ -50,11 +47,11 @@ export class CmpArticleCard extends Component {
               :
               null
             } 
-
             </div>
           </div>
         </div>
 
+        
       </div>
     )
   }

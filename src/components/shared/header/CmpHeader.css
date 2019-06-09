@@ -1,13 +1,13 @@
 header {
     position: relative;
     height: 5rem;
-    padding: 0 5.34rem;
     border-bottom: 1px solid #999;
-    background-color: #fff;
+    background-color: #FFFFFF;
+    z-index: 99;
 }
 
 
-header.fixed > div {
+header.fixed  {
     position: fixed;
     left: 0;
     right: 0;
@@ -15,14 +15,15 @@ header.fixed > div {
     margin: 0 auto;
     width: 100%;
     top: 0;
-    z-index: 999;
-    background-color: #fff;
-    height: 5rem;
+    z-index: 99;
 }
 
 
 @media screen and (max-width: 768px) {
+    header.fixed  {
+        width: inherit;
+    }
     header {
-        padding: 0 3rem;
+        padding: 0 2rem;
     }
 }
