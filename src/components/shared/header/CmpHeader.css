@@ -6,7 +6,6 @@ header {
     z-index: 99;
 }
 
-
 header.fixed  {
     position: fixed;
     left: 0;

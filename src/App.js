@@ -12,57 +12,78 @@ import JSLibrary from './libraries/JSLibrary.js'
 
 export class App extends Component {
 
+  constructor(props) {
+    super(props)
 
-  componentWillMount() {
     
-    var deabouncedScrollListener = JSLibrary.debounce(function () {
+    
+  }
 
+
+  componentDidMount() {
+
+    const defaults = {
+      stops: {
+        headerFixed: 180,
+        parallaxStart: 230,
+        parallaxStop: 360,
+        whiteShadow: 420
+      },
+      elements: {
+        header: document.querySelector('header'),
+        article: document.querySelector('article'),
+        aside: document.querySelector('aside'),
+        shadow: document.querySelector('.shadow'),
+        main: document.querySelector('main'),
+      },
+      articleOriginalPosition: 460,
+      asideOriginalPosition: 360
+    }
+    
+    var deabouncedScrollListener = JSLibrary.debounce(function (params) {
       let scrollPosition = window.scrollY;
-      let header = document.querySelector('header');
-      let article = document.querySelector('article');
-      let aside = document.querySelector('aside');
-      let shadow = document.querySelector('.shadow');
-      let main = document.querySelector('main');
 
-      console.log('scrollPosition: ' + scrollPosition);
-
-      if(scrollPosition > 180) {
-        header.classList.remove('fixed');
-        header.style.top = '180px';
-        main.style.marginTop = 0;
+      //Header
+      if(scrollPosition > params.stops.headerFixed) {
+        params.elements.header.classList.remove('fixed');
+        params.elements.header.style.top = params.stops.headerFixed + 'px';
+        params.elements.main.style.marginTop = 0;
       }
-
-      if(scrollPosition <= 180) {
-        header.classList.add('fixed');
-        header.style.top = '0';
-        main.style.marginTop = '5rem';
+      if(scrollPosition <= params.stops.headerFixed) {
+        params.elements.header.classList.add('fixed');
+        params.elements.header.style.top = '0';
+        params.elements.main.style.marginTop = '5rem';
       }
 
 
-      if(scrollPosition > 230 && scrollPosition < 360) {
-        var originalPositionArticle = 460;
-        var originalPositionAside = 360;
-        var offset = scrollPosition - 230;
-        console.log(offset);
+      //Article
+      if(scrollPosition > params.stops.parallaxStart && scrollPosition < params.stops.parallaxStop) {
+        //debugger
+        var originalPositionArticle = params.articleOriginalPosition;
+        var originalPositionAside = params.asideOriginalPosition;
+        var offset = scrollPosition - params.stops.parallaxStart;
+        //console.log(offset);
         var newPositionArticle = originalPositionArticle - offset;
         var newPositionAside = originalPositionAside + (offset/2);
 
-        article.style.top = newPositionArticle + 'px';
-        aside.style.top = newPositionAside + 'px';
-        shadow.style.top = newPositionArticle + 'px';
+        params.elements.article.style.top = newPositionArticle + 'px';
+        params.elements.aside.style.top = newPositionAside + 'px';
+        params.elements.shadow.style.top = newPositionArticle + 'px';
       }
 
-      if(scrollPosition > 420) {
-        shadow.classList.add('expanded');
+      //White shadow
+      if(scrollPosition > params.stops.whiteShadow) {
+        params.elements.shadow.classList.add('expanded');
       }
-
-      if(scrollPosition < 420) {
-        shadow.classList.remove('expanded');
+      if(scrollPosition < params.stops.whiteShadow) {
+        params.elements.shadow.classList.remove('expanded');
       }
       
-    }, 5);
+    }, 10);
     
-    window.addEventListener('scroll', deabouncedScrollListener);
+    window.addEventListener('scroll', function() {
+      deabouncedScrollListener(defaults);
+    });
 
     
   }

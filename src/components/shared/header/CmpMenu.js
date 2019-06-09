@@ -6,21 +6,11 @@ const CmpMenu = ({pages}) => {
     return (
         <nav>
             <div id="menu-toggle">
-
-
-
-
                 <input type="checkbox" />
 
-
                 <span></span>
                 <span></span>
                 <span></span>
-
-
-
-
-
 
                 <ul>
                     {
@@ -31,7 +21,6 @@ const CmpMenu = ({pages}) => {
                         )
                     }
                 </ul>
-
             </div>
         </nav>
     )    

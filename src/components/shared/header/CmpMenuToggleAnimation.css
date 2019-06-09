@@ -108,14 +108,10 @@
     font-size: 1.5rem;
   }
 
-  /*
-  * And let's fade it in from the left
-  */
   #menu-toggle input:checked ~ ul
   {
     transform: scale(1.0, 1.0);
     opacity: 1;
   }
-
 
 }

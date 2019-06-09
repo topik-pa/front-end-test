@@ -49,7 +49,6 @@ export class CmpArticleGallery extends Component {
 
 
   render() {
-    
     return (
       <div className="article__gallery">
         {

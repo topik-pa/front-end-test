@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from 'react';
 import './CmpArticleCard.css';
 
-import CmpArticleCardButton from './CmpArticleCardButton'
+import CmpArticleCardButton from './CmpArticleCardButton';
 
 
 export class CmpArticleCard extends Component {
@@ -49,9 +49,7 @@ export class CmpArticleCard extends Component {
             } 
             </div>
           </div>
-        </div>
-
-        
+        </div>    
       </div>
     )
   }

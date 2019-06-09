@@ -1,9 +1,7 @@
 
 aside {
-    /*width: 35%;*/
     position: absolute;
     top: 360px;
-    /*padding: 0 2rem;*/
     right: 0;
     padding-right: 11rem;
     z-index: 99;
@@ -20,7 +18,7 @@ aside {
     aside {
         position: relative;
         width: initial;
-        top: 440px!important;
+        top: 420px!important;
         padding-right: 0;
     }
 }
