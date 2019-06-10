@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 768px) {
 
-  /*Toggle animation*/
   a {
       transition: color 0.3s ease
   }
@@ -16,7 +15,6 @@
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-    /*padding: 0 2rem;*/
   }
 
 
@@ -27,7 +25,6 @@
     height: 3rem;
     position: absolute;
     top: 0;
-    /*left: -5px;*/
     cursor: pointer;
     opacity: 0;
     z-index: 2; 
@@ -95,7 +92,6 @@
     background: #FFFFFF;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
     
     transform-origin: 0% 0%;
     transform: translate(100%, 0);

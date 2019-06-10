@@ -16,7 +16,7 @@ export class App extends Component {
 
     const defaults = {
       stops: {
-        headerFixed: 180,
+        headerFixed: 300,
         parallaxStart: 230,
         parallaxStop: 360,
         whiteShadow: 420

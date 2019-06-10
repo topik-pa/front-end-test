@@ -1,9 +1,9 @@
 
 aside {
     position: absolute;
-    top: 360px;
+    top: 380px;
     right: 0;
-    padding-right: 11rem;
+    padding-right: 13rem;
     z-index: 99;
 }
 
@@ -18,7 +18,7 @@ aside {
     aside {
         position: relative;
         width: initial;
-        top: 420px!important;
-        padding-right: 0;
+        top: 420px;
+        padding: 0 3rem;
     }
 }

@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
     google: {
-        families: ['Montserrat:400,700', 'Open+Sans', 'Material+Icons', 'sans-serif']
+        families: ['Montserrat:400,700', 'Material+Icons', 'sans-serif']
     }
 });
 

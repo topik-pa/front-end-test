@@ -11,8 +11,7 @@ const CmpArticle = ({ article, images }) => {
           <CmpArticleBody article={article} images={images} />        
         </article> 
         <div className="shadow"></div>
-      </div>
-           
+      </div>  
     )    
 }
 

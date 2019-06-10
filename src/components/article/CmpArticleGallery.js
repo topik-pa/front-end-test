@@ -1,15 +1,8 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import './CmpArticleGallery.css';
 
 
 export class CmpArticleGallery extends Component {
-
-  /*constructor(props) {
-    super(props)
-    this.getImages = this.getImages.bind(this)
-  }*/
-
 
   getImages() {
     let returnedArray = [];

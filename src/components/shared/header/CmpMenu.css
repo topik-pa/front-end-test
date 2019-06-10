@@ -4,6 +4,7 @@ nav {
     top: -5rem;
     text-transform: uppercase;
     color: #999999;
+    font-size: 1.1rem;
 }
 nav ul {
     margin: 0;
@@ -12,7 +13,7 @@ nav ul {
 nav li {
     display: inline;
     list-style: none;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 nav input {
@@ -31,7 +32,7 @@ nav input {
     }
     nav ul {
         padding: 1rem;
-        background: #fafafa;
+        background: #FAFAFA;
     }
     nav li {
         padding: .4rem 1rem;

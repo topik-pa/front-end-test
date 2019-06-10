@@ -49,9 +49,9 @@ export class CmpCard extends Component {
             } 
             </div>
           </div>
-        </div>    
+        </div>  
+          
       </div>
     )
   }
-
 }
