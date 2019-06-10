@@ -4,7 +4,7 @@ import './App.css';
 
 import PageTemplate from './components/shared/PageTemplate'
 import CmpArticle from './components/article/CmpArticle'
-import CmpArticleAside from './components/article/CmpArticleAside'
+import CmpAside from './components/aside/CmpAside'
 
 import DATA from './data/data.js';
 import JSLibrary from './libraries/JSLibrary.js'
@@ -90,7 +90,7 @@ export class App extends Component {
       <PageTemplate data={DATA}>
         <main>
           <CmpArticle article={DATA.article} images={DATA.images} cards={DATA.cards}/>
-          <CmpArticleAside cards={DATA.cards}/>
+          <CmpAside cards={DATA.cards}/>
         </main>
       </PageTemplate>
     )

@@ -1,8 +1,8 @@
 import React from 'react';
-import './CmpArticleCardButton.css';
+import './CmpButton.css';
 
 
-const CmpArticleCardButton = ({cta, onClick=f=>f }) => {
+const CmpButton = ({cta, onClick=f=>f }) => {
     if (cta) {
         return (
             <a className="button" href="!#" onClick={onClick}>Clicca qui</a>
@@ -13,4 +13,4 @@ const CmpArticleCardButton = ({cta, onClick=f=>f }) => {
         }   
 }
 
-export default CmpArticleCardButton
+export default CmpButton

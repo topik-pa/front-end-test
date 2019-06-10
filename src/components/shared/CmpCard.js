@@ -1,11 +1,11 @@
 import React from 'react';
 import { Component } from 'react';
-import './CmpArticleCard.css';
+import './CmpCard.css';
 
-import CmpArticleCardButton from './CmpArticleCardButton';
+import CmpButton from './CmpButton';
 
 
-export class CmpArticleCard extends Component {
+export class CmpCard extends Component {
 
   state = {
     popupMode: '--hide',
@@ -32,7 +32,7 @@ export class CmpArticleCard extends Component {
           {data.title}
         </div>
         
-        <CmpArticleCardButton cta={data.cta} onClick={this.handleClick}/>
+        <CmpButton cta={data.cta} onClick={this.handleClick}/>
 
         <div className={"card__popup" + this.state.popupMode}>
           <div>
