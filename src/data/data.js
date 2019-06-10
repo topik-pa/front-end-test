@@ -19,7 +19,7 @@ const DATA =
         "title": "Quann steva là in Honduras, steva rint a na capanna e nziemm a me ce steva.",
         "subtitle": "Nun ce stà mammà là dint!",
         "text": "E intant' e sord tuoj nunn arrivavan, ' Na sear gli honduregni me mettetter' nu machete n'man e gridavan': Accirel'! Accirel'! Je pregav'.pregav' ca corcrun' me venev' a salva' , ca tu me veniv' a salva'!",
-        "author": "lorem Ipsum",
+        "author": "Lorem Ipsum",
         "avatar": "https://placekitten.com/g/40/40",
         "socials": [
           {
@@ -78,29 +78,34 @@ const DATA =
             "cta": "Clicca qui",
             "images": [
               {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
+                "id": 1,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
               },
               {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
+                "id": 2,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
               },
               {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
+                "id": 3,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
               },
               {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
-              }
-              ,
-              {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
+                "id": 4,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
               },
               {
-                  "src": "https://placekitten.com/g/250/250",
-                  "alt": "Alt descriprion for this image",
+                "id": 5,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
+              },
+              {
+                "id": 6,
+                "src": "https://placekitten.com/g/250/250",
+                "alt": "Alt descriprion for this image",
               }
               
           ],

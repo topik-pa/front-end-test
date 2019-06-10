@@ -11,7 +11,7 @@ const CmpArticleBody = ({ article, images }) => {
         <p>{article.text}</p>
         <div className="article__footer">
           <div className="article__author">
-            <img alt="" src={article.avatar}/>
+            <img alt={article.author} src={article.avatar}/>
             <div>{article.author}</div>
           </div>
           <div className="article__socials">

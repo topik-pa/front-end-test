@@ -12,14 +12,6 @@ import JSLibrary from './libraries/JSLibrary.js'
 
 export class App extends Component {
 
-  constructor(props) {
-    super(props)
-
-    
-    
-  }
-
-
   componentDidMount() {
 
     const defaults = {
@@ -38,7 +30,7 @@ export class App extends Component {
       },
       articleOriginalPosition: 460,
       asideOriginalPosition: 360
-    }
+    }    
     
     var deabouncedScrollListener = JSLibrary.debounce(function (params) {
       let scrollPosition = window.scrollY;
@@ -58,11 +50,9 @@ export class App extends Component {
 
       //Article
       if(scrollPosition > params.stops.parallaxStart && scrollPosition < params.stops.parallaxStop) {
-        //debugger
         var originalPositionArticle = params.articleOriginalPosition;
         var originalPositionAside = params.asideOriginalPosition;
         var offset = scrollPosition - params.stops.parallaxStart;
-        //console.log(offset);
         var newPositionArticle = originalPositionArticle - offset;
         var newPositionAside = originalPositionAside + (offset/2);
 
@@ -81,9 +71,16 @@ export class App extends Component {
       
     }, 10);
     
-    window.addEventListener('scroll', function() {
-      deabouncedScrollListener(defaults);
-    });
+    //Parallax only on big screen due to performance
+    if(!window.matchMedia("(max-width: 768px)").matches) {
+      //Start addind fixed header
+      defaults.elements.header.classList.add('fixed');
+      defaults.elements.main.style.marginTop = '5rem';
+      window.addEventListener('scroll', function() {
+        deabouncedScrollListener(defaults);
+      });
+    }
+    
 
     
   }

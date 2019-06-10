@@ -5,46 +5,36 @@ import './CmpArticleGallery.css';
 
 export class CmpArticleGallery extends Component {
 
-  constructor(props) {
+  /*constructor(props) {
     super(props)
     this.getImages = this.getImages.bind(this)
-  }
+  }*/
 
 
   getImages() {
-    let allImages = [];
-    let arrImg = [];
-    const MAX_IMAGES = 12;
-    let images = this.props.images;
-
-    let over = images.length % 3;
-
-    allImages = images.slice(0, images.length - over);
-
-    if(allImages.length > MAX_IMAGES) {
-      allImages.length = MAX_IMAGES;
-    }
-
+    let returnedArray = [];
 
     var tempArr = [];
-    allImages.forEach((elem, i) => {
+    this.props.images.forEach((elem, i) => {
       var obj = {};
       obj.src = elem.src;
       obj.alt = elem.alt;
 
+      //Only some images will be big
       if(i%3 === 0) {
-        arrImg.push(obj);
+        returnedArray.push(obj);
       }
       else {    
         tempArr.push(obj);
         if (tempArr.length === 2) {
-          arrImg.push(tempArr);
+          returnedArray.push(tempArr);
           tempArr = [];
         }
       }
+
     });
 
-    return arrImg;
+    return returnedArray;
   }
 
 
@@ -59,13 +49,13 @@ export class CmpArticleGallery extends Component {
                   {
                     obj.map(
                       (img, x) =>
-                    <img key={x} alt="" src={img.src} className={img.size}/>
+                    <img key={x} alt={img.alt} src={img.src} className={img.size}/>
                     )
                   }  
                 </div>
                 :
                 <div className="big">
-                  <img key={i} alt="" src={obj.src} className={obj.size}/>
+                  <img key={i} alt={obj.alt} src={obj.src} className={obj.size}/>
                 </div> 
             )
         }

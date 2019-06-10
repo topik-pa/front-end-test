@@ -6,7 +6,7 @@ import './CmpHeader.css';
 const CmpHeader = ({logo, pages}) => {
     
     return (
-        <header className="fixed">
+        <header>
             <CmpLogo logo={logo}/>            
             <CmpMenu pages={pages}/>
         </header>
